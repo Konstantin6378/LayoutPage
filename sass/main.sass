@@ -421,3 +421,116 @@ section.information
 					text-align: center
 					>a
 						color: #722ED1
+
+#footer
+	background-color: #fff
+	margin: 10px 0 0
+	.row_flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.col_footer_1
+			width: 20%
+		.col_footer_2
+			width: 55%
+		.col_footer_3
+			width: 16%
+	.logo_info
+		>a
+			width: 48px
+			height: 48px
+			display: block
+			>img
+				margin: 0 auto
+		>.descr
+			color: $dark_accent
+			font-size: 13px
+			margin: 16px 0
+			line-height: 1.65
+		>.social
+			list-style-type: none
+			>li
+				display: inline-block
+				margin-right: 16px
+				>a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 16px
+					height: 16px
+					text-decoration: none
+					transition: transform .4s ease
+					&:hover
+						transform: translateY(-8px)
+				&:last-child
+					margin-right: 0
+	.mnu_footer_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0 15px
+		>.mnu_footer
+			// width: 23%
+			>ul
+				list-style-type: none
+				>li
+					display: block
+					>a
+						padding: 6px 0
+						display: block
+						text-decoration: none
+						color: $dark_accent
+						transition: color .4s ease
+						// padding: 4px 40px 5px 0
+						font-size: 13px
+						&:hover
+							color: $accent
+	b.heading
+		color: $dark_accent
+		margin-bottom: 8px
+		display: block
+		font-size: 18px
+		font-weight: 900
+	.newsletter
+		>b.heading
+			margin-bottom: 16px
+		>form
+			position: relative
+			display: flex
+			align-items: center
+			background-color: #fff
+			box-shadow: 0 5px 9px rgba(0, 0, 0, .05)
+			// margin-top: 10px
+			>input
+				max-width: 100%
+				display: block
+				border: none
+				outline: none
+				padding: 12px 40px 12px 16px
+				&:placeholder
+					color: $gray
+					font-size: 14px
+			>button
+				position: absolute
+				cursor: pointer
+				top: 9px
+				right: 5px
+				display: flex
+				align-items: center
+				justify-content: center
+				border: none
+				background-color: transparent
+				outline: none
+				width: 24px
+				height: 24px
+	.copyright
+		display: flex
+		padding-bottom: 15px
+		margin-top: 66px
+		align-items: center
+		justify-content: center
+		color: $dark_accent
+		font-weight: bold
+		font-size: 18px
+		>.copy_icon
+			margin-left: 10px
