@@ -41,8 +41,13 @@
 				<div class="inner_header">
 					<a href="/" class="logo"><img src="img/logo.svg" alt="analytics"></a>
 					<div class="right_side_header">
+						<div class="hamburger" id="hamburger-1">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
 						<nav>
-							<ul class="nmu_top">
+							<ul class="mnu_top">
 								<li class="has_sub_menu">
 									<a href="">About</a>
 									<ul class="sub_menu">
@@ -62,27 +67,29 @@
 				</div>
 			</div>
 		</header>
-		<div class="mein_banner container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="mb_info">
-						<div class="notif">
-							<img src="img/main_banner/update_icon_mb.svg" alt="update_icon">
-							<p>v3.1 released. <a href="#">Learn more</a></p>
+		<div class="main_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-7 order-lg-1 order-2">
+						<div class="mb_info">
+							<div class="notif">
+								<img src="img/main_banner/update_icon_mb.svg" alt="update_icon">
+								<p>v3.1 released. <a href="#">Learn more</a></p>
+							</div>
+							<h1>
+								Your data with real-time analytics
+							</h1>
+							<div class="descr">Harness the potential of Big Data Analytics & Cloud Services and become a
+								data-driven organization with Needle tail</div>
+							<div class="btns">
+								<a href="#" class="btn">Start free triel</a>
+								<a href="#" class="btn btn_white">Learn More</a>
+							</div>
 						</div>
-						<h1>
-							Your data with real-time analytics
-						</h1>
-						<div class="descr">Harness the potential of Big Data Analytics & Cloud Services and become a
-							data-driven organization with Needle tail</div>
 					</div>
-					<div class="btns">
-						<a href="#" class="btn">Start free triel</a>
-						<a href="#" class="btn btn_white">Learn More</a>
+					<div class="col-lg-6 col-md-5 order-lg-2 order-1">
+						<img src="img/main_banner/image_mb.png" alt="mb_images" class="img-responsive">
 					</div>
-				</div>
-				<div class="col-lg-6">
-					<img src="img/main_banner/image_mb.png" alt="mb_images" class="img_responsive">
 				</div>
 			</div>
 		</div>
@@ -98,8 +105,8 @@
 				<div class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 					tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
 			</div>
-			<div class="row row_adv">
-				<div class="col-lg-4">
+			<div class="row row_adv justify-content-center">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="item_adv">
 						<img src="img/advantages/icon1.svg" alt="">
 						<div class="heading">Valuable business insights</div>
@@ -108,7 +115,7 @@
 							business insights.</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="item_adv">
 						<img src="img/advantages/icon2.svg" alt="">
 						<div class="heading">Powerful Algorithms</div>
@@ -116,7 +123,7 @@
 							simplified & enriched data.</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="item_adv">
 						<img src="img/advantages/icon3.svg" alt="">
 						<div class="heading">Data in real-time</div>
@@ -131,10 +138,10 @@
 	<section id="info_1" class="information">
 		<div class="container">
 			<div class="row d-fex align-items-center">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-4">
 					<img src="img/information/info-1.png" alt="" class="img-responsive">
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-8">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_notif_1.svg" alt="update_icon">
@@ -153,7 +160,7 @@
 	<section id="info_2" class="information">
 		<div class="container">
 			<div class="row d-fex align-items-center">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-8">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_notif_2.svg" alt="update_icon">
@@ -165,7 +172,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-4">
 					<img src="img/information/info-2.png" alt="" class="img-responsive">
 				</div>
 			</div>
@@ -419,7 +426,6 @@
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/animate.css">
 
-
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/jquery.fancybox.min.js"></script>
 	<script src="libs/wow.min.js"></script>
@@ -427,8 +433,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/adaptive.css">
 	<script src="js/common.js"></script>
-
-
 </body>
 
 </html>

@@ -56,43 +56,46 @@ body
 
 img
 	max-width: 100%
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+	.img-responsive
+		display: block
+		max-width: 100%
+		height: auto
 
 // btns
-.btn_simple
-	color: $accent
-	border: 1px solid $accent
-	font-weight: 700
-	padding: 6px 34px
-	text-decoration: none
-	transition: all .4s ease
-	border-radius: 20px
-	&:hover
+
+.btns
+	display: flex
+	align-items: center
+	.btn_simple
+		color: $accent
+		border: 1px solid $accent
+		font-weight: 700
+		padding: 6px 34px
+		text-decoration: none
+		transition: all .4s ease
+		border-radius: 20px
+		&:hover
+			background-color: $accent
+			color: #fff
+
+	.btn
 		background-color: $accent
 		color: #fff
-
-.btn
-	background-color: $accent
-	color: #fff
-	padding: 14px 40px
-	text-decoration: none
-	transition: all .4s ease
-	border-radius: 24px
-	box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
-	&:hover
-		background-color: #fff
-		color: #111
-	&.btn_white
-		background-color: #fff
-		color: #111
-		margin-left: 20px
+		padding: 14px 40px
+		text-decoration: none
+		transition: all .4s ease
+		border-radius: 24px
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
 		&:hover
-			color: #fff
-			background-color: $accent
+			background-color: #fff
+			color: #111
+		&.btn_white
+			background-color: #fff
+			color: #111
+			margin-left: 20px
+			&:hover
+				color: #fff
+				background-color: $accent
 
 #top_banner
 	background-size: cover
@@ -114,7 +117,7 @@ img
 		.right_side_header
 			display: flex
 			align-items: center
-			.nmu_top
+			.mnu_top
 				list-style: none
 				>li
 					display: inline-block
@@ -196,7 +199,7 @@ h1, h2, h3, h4
 		&:hover
 			color: darken($accent, 10%) //darken(, ) <-- затемнить lighten(,) <-- засветлить
 			border-color: darken($accent, 10%)
-.mein_banner
+.main_banner
 	padding: 150px 0 400px
 	.mb_info
 		>h1
@@ -459,8 +462,9 @@ section.information
 					width: 16px
 					height: 16px
 					text-decoration: none
-					transition: transform .4s ease
-					&:hover
+					>img
+						transition: transform .4s ease
+					&:hover >img
 						transform: translateY(-8px)
 				&:last-child
 					margin-right: 0
@@ -534,3 +538,26 @@ section.information
 		font-size: 18px
 		>.copy_icon
 			margin-left: 10px
+
+.hamburger
+	display: none
+	// position: relative
+	// right: 15px
+	// top: 0
+	.line
+		width: 24px
+		height: 3px
+		background-color: #333
+		display: block
+		margin: 6px auto
+		transition: all 0.3s ease-in-out
+		// border-radius: 5px
+	&:hover
+		cursor: pointer
+	&.is-active .line
+		&:nth-child(1)
+			transform: translateY(9px) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform: translateY(-9px) rotate(-45deg)
