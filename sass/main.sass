@@ -62,21 +62,21 @@ img
 		height: auto
 
 // btns
+.btn_simple
+	color: $accent
+	border: 1px solid $accent
+	font-weight: 700
+	padding: 6px 34px
+	text-decoration: none
+	transition: all .4s ease
+	border-radius: 20px
+	&:hover
+		background-color: $accent
+		color: #fff
 
 .btns
 	display: flex
 	align-items: center
-	.btn_simple
-		color: $accent
-		border: 1px solid $accent
-		font-weight: 700
-		padding: 6px 34px
-		text-decoration: none
-		transition: all .4s ease
-		border-radius: 20px
-		&:hover
-			background-color: $accent
-			color: #fff
 
 	.btn
 		background-color: $accent
@@ -247,7 +247,6 @@ section
 		.item_adv
 			>img
 				width: 40px
-				grid-template: 40px
 				border-radius: 50%
 			>.heading
 				font-size: 24px
@@ -297,6 +296,7 @@ section.information
 			border-radius: 50%
 		>.name
 			margin-top: 16px
+			font-size: 16px
 		>.name, >.positiion
 			color: #111
 			font-weight: 900
@@ -318,7 +318,6 @@ section.information
 			cursor: pointer
 			filter: grayscale(1)
 			transition: all .4s ease
-			// &:hover,
 			&.active
 				filter: grayscale(0)
 				transform: scale(1.1)
@@ -504,14 +503,13 @@ section.information
 			align-items: center
 			background-color: #fff
 			box-shadow: 0 5px 9px rgba(0, 0, 0, .05)
-			// margin-top: 10px
 			>input
 				max-width: 100%
 				display: block
 				border: none
 				outline: none
 				padding: 12px 40px 12px 16px
-				&:placeholder
+				&::placeholder
 					color: $gray
 					font-size: 14px
 			>button
@@ -541,9 +539,6 @@ section.information
 
 .hamburger
 	display: none
-	// position: relative
-	// right: 15px
-	// top: 0
 	.line
 		width: 24px
 		height: 3px
@@ -551,7 +546,6 @@ section.information
 		display: block
 		margin: 6px auto
 		transition: all 0.3s ease-in-out
-		// border-radius: 5px
 	&:hover
 		cursor: pointer
 	&.is-active .line
@@ -561,3 +555,12 @@ section.information
 			opacity: 0
 		&:nth-child(3)
 			transform: translateY(-9px) rotate(-45deg)
+
+.animate_graphic
+	animation: 1.4s infinite alternate movingAn
+
+@keyframes movingAn
+	from
+		transform: translate(0,0)
+	to
+		transform: translate(10px,0px)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -49,17 +49,17 @@
 						<nav>
 							<ul class="mnu_top">
 								<li class="has_sub_menu">
-									<a href="">About</a>
+									<a href="#">About</a>
 									<ul class="sub_menu">
-										<li><a href="#">Certification</a></li>
-										<li><a href="#">Team</a></li>
-										<li><a href="#">Requisites</a></li>
+										<li><a href="#info_1" class="yakor">Certification</a></li>
+										<li><a href="#info_2" class="yakor">Team</a></li>
+										<li><a href="#reviews" class="yakor">Requisites</a></li>
 										<li><a href="#">History</a></li>
 									</ul>
 								</li>
-								<li><a href="">Pricing</a></li>
-								<li><a href="">Contact</a></li>
-								<li><a href="">Login</a></li>
+								<li><a href="#advantages" class="yakor">Pricing</a></li>
+								<li><a href="#footer" class="yakor">Contact</a></li>
+								<li><a href="#pre_footer" class="yakor">Login</a></li>
 							</ul>
 						</nav>
 						<a href="#" class="btn_simple">Get Started</a>
@@ -70,7 +70,7 @@
 		<div class="main_banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-7 order-lg-1 order-2">
+					<div class="col-lg-6 col-md-7 order-lg-1 order-2 wow slideInLeft" data-wow-duration="1.5s">
 						<div class="mb_info">
 							<div class="notif">
 								<img src="img/main_banner/update_icon_mb.svg" alt="update_icon">
@@ -87,15 +87,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-5 order-lg-2 order-1">
-						<img src="img/main_banner/image_mb.png" alt="mb_images" class="img-responsive">
+					<div class="col-lg-6 col-md-5 order-lg-2 order-1 wow slideInRight" data-wow-duration="1.5s">
+						<img src="img/main_banner/image_mb.png" alt="mb_images" class="animate_graphic img-responsive">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="advantages">
-		<div class="container">
+		<div class="container wow fadeIn" data-wow-duration="2s">
 			<div class="notif">
 				<img src="img/advantages/why_icon.svg" alt="update_icon">
 				<p>Why Qubly</p>
@@ -138,10 +138,10 @@
 	<section id="info_1" class="information">
 		<div class="container">
 			<div class="row d-fex align-items-center">
-				<div class="col-lg-6 col-md-4">
-					<img src="img/information/info-1.png" alt="" class="img-responsive">
+				<div class="col-lg-6 col-md-4 wow slideInLeft" data-wow-duration="1.5s">
+					<img src="img/information/info-1.png" alt="" class="animate_graphic img-responsive">
 				</div>
-				<div class="col-lg-6 col-md-8">
+				<div class="col-lg-6 col-md-8 wow slideInRight" data-wow-duration="1.5s">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_notif_1.svg" alt="update_icon">
@@ -155,12 +155,11 @@
 				</div>
 			</div>
 		</div>
-		</div>
 	</section>
 	<section id="info_2" class="information">
 		<div class="container">
 			<div class="row d-fex align-items-center">
-				<div class="col-lg-6 col-md-8">
+				<div class="col-lg-6 col-md-8 wow slideInLeft" data-wow-duration="1.5s">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_notif_2.svg" alt="update_icon">
@@ -172,22 +171,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-4">
-					<img src="img/information/info-2.png" alt="" class="img-responsive">
+				<div class="col-lg-6 col-md-4 wow slideInRight" data-wow-duration="1.5s">
+					<img src="img/information/info-2.png" alt="" class="animate_graphic img-responsive">
 				</div>
 			</div>
 		</div>
-		</div>
 	</section>
 	<section id="reviews">
-		<div class="container">
+		<div class="container wow fadeIn" data-wow-duration="2s">
 			<div id="rev_1" class="item_rev active">
 				<div class="quotes">
 					"What I love about Qubly is the easy way we can collaborate even if there is a lot of people
 					involved in the process"
 				</div>
 				<img src="img/reviews/avatar1.png" alt="">
-				<div class="name">Guillaume Cabane</div>
+				<h5 class="name">Guillaume Cabane</h5>
 				<div class="positiion">CTO @ BigSpring</div>
 			</div>
 			<div id="rev_2" class="item_rev">
@@ -195,7 +193,7 @@
 					Далеко-далеко за словесными, горами в стране гласных и согласных живут.
 				</div>
 				<img src="img/reviews/avatar2.png" alt="">
-				<div class="name">Guillaume Cabane</div>
+				<h5 class="name">Guillaume Cabane</h5>
 				<div class="positiion">CTO @ BigSpring</div>
 			</div>
 			<div id="rev_3" class="item_rev">
@@ -203,7 +201,7 @@
 					Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Языком большой
 					своих собрал имени путь переписывается страна!</div>
 				<img src="img/reviews/avatar3.png" alt="">
-				<div class="name">Guillaume Cabane</div>
+				<h5 class="name">Guillaume Cabane</h5>
 				<div class="positiion">CTO @ BigSpring</div>
 			</div>
 			<div id="rev_4" class="item_rev">
@@ -211,7 +209,7 @@
 					Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
 				</div>
 				<img src="img/reviews/avatar4.png" alt="">
-				<div class="name">Guillaume Cabane</div>
+				<h5 class="name">Guillaume Cabane</h5>
 				<div class="positiion">CTO @ BigSpring</div>
 			</div>
 			<div id="rev_5" class="item_rev">
@@ -220,7 +218,7 @@
 					delectus quas accusantium.
 				</div>
 				<img src="img/reviews/avatar5.png" alt="">
-				<div class="name">Guillaume Cabane</div>
+				<h5 class="name">Guillaume Cabane</h5>
 				<div class="positiion">CTO @ BigSpring</div>
 			</div>
 			<div class="line"></div>
@@ -236,7 +234,7 @@
 	<section id="pre_footer">
 		<div class="container">
 			<div class="row d-fex align-items-center">
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow slideInLeft" data-wow-duration="1.5s">
 					<div class="pf_info">
 						<h4>See why the world’s best companies use Qubly to become truly data-driven.</h4>
 						<img src="img/pf_footer/pf_line.svg" alt="" class="line_img">
@@ -248,9 +246,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow slideInRight" data-wow-duration="1.5s">
 					<div class="form_wrapper">
-						<form action="">
+						<form>
 							<h4>Sing UP</h4>
 							<button type="submit" class="btn_form">Start your free trial</button>
 							<input type="email" placeholder="Your primary email" name="email" required>
@@ -421,7 +419,7 @@
 	</footer>
 	<!-- libs -->
 	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&display=swap" />
+		href="https://fonts.googleapis.com/css?family=Lato:100,100,300,300,regular,,700,700,900,900&display=swap" />
 	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/animate.css">
